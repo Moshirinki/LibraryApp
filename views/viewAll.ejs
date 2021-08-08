@@ -4,7 +4,19 @@
 <head>
     <meta charset="utf-8" />
     <title></title>
+  <!-- Bootstrap CSS -->
+    <!-- https://cdnjs.com/libraries/twitter-bootstrap/5.0.0-beta1 -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/css/bootstrap.min.css"
+    />
 
+    <!-- Icons: https://getbootstrap.com/docs/5.0/extend/icons/ -->
+    <!-- https://cdnjs.com/libraries/font-awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
        <style>
         th {
             background-color: darkgray;
@@ -25,9 +37,7 @@
             text-align: center;
         }
 
-        #tbl {
-           
-        }
+       
 
         #title {
             display:block;
@@ -38,6 +48,7 @@
         }
         tr, td {
             background-color: darkturquoise;
+            border: solid 1px;
         }
 
         body {
@@ -47,21 +58,7 @@
             justify-content: center;
         }
 
-           button {
-               border-radius: 70px;
-               width: auto;
-               height: 50px;
-               margin: auto;
-               text-align: center;
-               background-color: rgb(0,116,203);
-               box-shadow: 5px 3px 5px 3px blue;
-               -webkit-border-radius: 12px;
-               border-radius: 15px;
-               cursor: pointer;
-               font: inherit;
-               font-weight: bold;
-               color: azure;
-           }
+        
          
           }
     </style>
@@ -83,13 +80,24 @@
         <table border="1">
             <tr><th>ID</th><th>Author</th><th>Title</th><th>Year</th></tr>
             <% for (var i = 0; i < books.length; i++) { %>
-            <tr><td><%=books[i]._id %></td><td><%=books[i].author %></td><td><%=books[i].title %></td><td><%=books[i].year %></td></tr>
+            <tr><td><%=books[i]._id %></td>
+                <td><%=books[i].author %></td>
+                <td><%=books[i].title %></td>
+                <td><%=books[i].year %></td>
+                <td><a href="#" class="btn btn-info">Edit</a></td>
+                <td>
+                    <form action="/deleteBook" method="post">
+                        <button type="submit" class="btn btn-danger">Delete</a>
+                    </form>
+                </td>
+                
+            </tr>
             <% }%>
         </table>
     </div>
     <hr/>
     <aside>
-        <a href="/"> <button id="btnHome" type="button">Return Home</button></a>
+        <a href="/"> <button id="btnHome" class="btn btn-primary" type="button">Return Home</button></a>
     </aside>
 </body>
 </html> 

@@ -1,0 +1,19 @@
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Books</h4>
+    <hr />
+    <dl class="row">
+      <dt class="col-sm-2">
+       <label for="id">ID</label>
+      </dt> 
+      <dd col-sm-10>
+        <%=books[i]._id %>
+      </dd>
+    </dl>
+    
+    <form action="Delete">
+        <input type="hidden" for="Id" />
+        <input type="submit" value="Delete" class="btn btn-danger" /> |
+        <a asp-action="Index">Back to List</a>
+    </form>
+</div>
