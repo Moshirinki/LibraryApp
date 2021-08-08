@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+
+    <style>
+       
+            body {
+                background-color: rgba(111, 198, 198, 0.42);
+                background-position: center;
+                justify-content: center;
+            }
+
+        button {
+            width: auto;
+            height: 50px;
+            -webkit-border-radius: 22px;
+            border-radius: 25px;
+            cursor: pointer;
+            background-color: rgb(0,116,203);
+            font-weight: bold;
+            font: inherit;
+            color: azure;
+        }
+        button:hover{
+            background-color:#ff006e;
+        }
+         
+
+            #libHome {
+                width: 100%;
+                margin: 0 auto;
+                background: #86c1cc;
+                font-weight: bold;
+                display: flex;
+                display: -webkit-flex;
+                justify-content: center;
+                -o-justify-content: center;
+                -ms-justify-content: center;
+                -moz-justify-content: center;
+                -webkit-justify-content: center;
+                align-items: center;
+                -o-align-items: center;
+                -ms-align-items: center;
+                -moz-align-items: center;
+                -webkit-align-items: center;
+                height: 300px;
+            }
+
+            #welcome {
+                width: 100%;
+                margin: 0 auto;
+                background: #86c1cc;
+                font-weight: bold;
+                display: flex;
+                display: -webkit-flex;
+                justify-content: center;
+                -o-justify-content: center;
+                -ms-justify-content: center;
+                -moz-justify-content: center;
+                -webkit-justify-content: center;
+                align-items: center;
+                -o-align-items: center;
+                -ms-align-items: center;
+                -moz-align-items: center;
+                -webkit-align-items: center;
+                border: 5px thick blue;
+                border-style: ridge;
+                border-radius: 12px;
+                box-shadow: 0px 8px 8px 8px blue;
+            }
+     
+            </style>
+</head>
+<body>
+    <div class="animationdiv"></div>
+  
+    <div id="welcome">
+        <h2>Welcome to the Library Management System</h2>
+
+    </div>
+    <div id="libHome">
+        
+        <a href="/viewAll"><button type="button">View Available Books</button></a>
+        <a href="/addBook"><button type="button">Add A New Book</button></a>
+    </div>
+</body>
+</html>

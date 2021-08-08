@@ -1,0 +1,182 @@
+﻿<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <link href="public/javascripts/MakeitNice.css" rel="stylesheet" />
+    <style>
+        
+            
+                /*body {
+                    background-image: url("Desktop/back.jpg");
+                    background-color: rgba(9, 17, 55, 0.49);
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                    background-position: center;
+                    justify-content: center;
+                    margin: 0;
+                }*/
+
+
+                .content {
+                    width: 100%;
+                    margin: 0 auto;
+                    background: #86c1cc;
+                    font-weight: bold;
+                    display: flex;
+                    display: -webkit-flex;
+                    justify-content: center;
+                    -o-justify-content: center;
+                    -ms-justify-content: center;
+                    -moz-justify-content: center;
+                    -webkit-justify-content: center;
+                    align-items: center;
+                    -o-align-items: center;
+                    -ms-align-items: center;
+                    -moz-align-items: center;
+                    -webkit-align-items: center;
+                }
+
+
+                .formcontent {
+                    margin: 180px 20px;
+                    flex-direction: column;
+                    -o-flex-direction: column;
+                    -ms-flex-direction: column;
+                    -moz-flex-direction: column;
+                    -webkit-flex-direction: column;
+                    box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+                    -o-box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+                    -ms-box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+                    -moz-box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+                    -webkit-box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+                    margin: 180px 0;
+                    position: relative;
+                    display: flex;
+                    display: -webkit-flex;
+                }
+
+
+                .formcontent {
+                    flex-direction: column;
+                    -o-flex-direction: column;
+                    -ms-flex-direction: column;
+                    -moz-flex-direction: column;
+                    -webkit-flex-direction: column;
+                    box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+                    -o-box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+                    -ms-box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+                    -moz-box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+                    -webkit-box-shadow: 0px 8px 20px 0px rgba(0, 0, 0, 0.15);
+                    margin: 180px 0;
+                    position: relative;
+                    display: flex;
+                    display: -webkit-flex;
+                }
+
+                .input {
+                    display: block;
+                    font-weight: bold;
+                }
+
+                .lbl::after {
+                    content: '*';
+                    padding: 2px;
+                    color: #b90000;
+                }
+
+                .input {
+                    float: right;
+                    margin-right: 125px;
+                }
+
+        input, button {
+            font: inherit;
+            padding: 2px;
+        }
+
+        button {
+            background-color: rgb(0,116,203);
+            width: 140px;
+            margin: 15px 0 34px;
+            cursor: pointer;
+            font-weight: 700;
+            font-size: 15px;
+            color: azure;
+            font-family: 'Century Gothic';
+        }
+            button:hover {
+                background-color: #86c1cc;
+
+            }
+        #btnAdd {
+            display: inline-block;
+            -webkit-border-radius: 12px;
+            border-radius: 15px;
+            cursor:pointer;
+          background-color:rgb(20,138,0);
+            width:100px;
+            color:azure;
+
+        }
+        #btnAdd:hover {
+            background-color: #00ff21;
+        }
+        #message{
+            display:block;
+        }
+                #btnHome {
+                    -webkit-border-radius: 12px;
+                    border-radius: 15px;
+                }
+
+                form ol {
+                    list-style: none;
+                }
+
+                form li {
+                    margin-top: 1em;
+                }
+           
+    </style>
+</head>
+<body>
+  
+
+    <div class="content">
+        <div class="formcontent">
+            
+            <form action="addData" method="post">
+                <fieldset>
+                    <legend style="font-weight:bold">Enter the details of the book here!</legend>
+                    <ol>
+
+                        <li class="lbl">Author</li>
+                        <li>
+                            <input type="text" id="auth" name="author" required placeholder="Author" class="input" />
+
+                        </li>
+                        <li class="lbl">Title</li>
+                        <li>
+                            <input type="text" id="tit" class="input" required name="title" placeholder="Title of the book" />
+                        </li>
+
+                        <li class="lbl">Year</li>
+                        <li>
+                            <input type="number" id="yr" class="input" required name="year" placeholder="Year published" />
+                        </li>
+                        <br />
+                        <li>
+                            <input id="btnAdd" type="submit" value="Add" />
+                        </li>
+                        <li>
+                            <a href="/"> <button id="btnHome" type="button">Go To Home<img src="public/images/add.JPG" alt="" width="30" /></button></a>
+                        </li>
+                    </ol>
+                </fieldset>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
