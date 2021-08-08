@@ -1,0 +1,13 @@
+{
+  "name": "library-app",
+  "version": "0.0.0",
+  "description": "LibraryApp",
+  "main": "app.js",
+  "author": {
+    "name": ""
+  },
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1"
+  }
+}
